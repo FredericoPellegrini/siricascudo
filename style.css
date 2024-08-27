@@ -1,17 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/krabby-patty');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial;
   padding: 10px;
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* Header/Blog Title */
@@ -22,22 +21,69 @@ body {
 }
 
 .header h1 {
-    font-family: 'Krabby Patty', sans-serif;    
-    color:#A21621;
-    text-shadow: 4px 4px 1px #7499C6;
-    font-size: 70px;
+  font-family: 'Krabby Patty', sans-serif;
+  color: #A21621;
+  text-shadow: 4px 4px 1px #7499C6;
+  font-size: 70px;
 }
 
-.header p{
-    font-weight: bold;
+.header p {
+  font-weight: bold;
 }
 
-
-.fakeimg img{
-    padding: 10px;
-    height: 175px;
+/* Grid for recipe card */
+.recipe-header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.recipe-header h2 {
+  margin-bottom: 5px;
+}
+
+.recipe-header h5 {
+  color: #888;
+}
+
+.recipe-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Ajusta a largura das colunas */
+  gap: 20px;
+  align-items: start;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.receita1 {
+  text-align: left;
+}
+
+.receita1 ul {
+  padding-left: 20px;
+}
+
+.receita1 li {
+  padding: 3px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.receita1 p {
+  text-align: justify;
+}
+
+h4 {
+  margin-top: 10px;
+  padding: 3px;
+}
 
 /* Style the top navigation bar */
 .topnav {
@@ -47,27 +93,26 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-    font-family: 'Roboto', sans-serif;    
-    float: left;
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Change color on hover */
 .topnav a:hover {
   background-color: #AF99C8;
   border-radius: 10px;
-  color:#fff;
-
+  color: #fff;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -79,7 +124,6 @@ body {
   background-color: #f1f1f1;
   padding-left: 20px;
 }
-
 
 /* Add a card effect for articles */
 .card {
@@ -105,7 +149,7 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }

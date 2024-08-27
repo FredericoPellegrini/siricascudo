@@ -132,6 +132,24 @@ h4 {
   margin-top: 20px;
 }
 
+
+
+
+.sobremim img{
+  height: 250px;
+
+}
+
+.sobremim h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sobremim p{
+  margin-top: 10px;
+  text-align: justify;
+}
+
 /* Clear floats after the columns */
 .row::after {
   content: "";
